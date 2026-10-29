@@ -52,10 +52,10 @@ nav a:hover{color:var(--accent)}
 
 /* stats */
 .stats{background:var(--band);border-block:1px solid var(--line)}
-.stats .in{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;padding-block:28px}
+.stats .in{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;padding-block:28px}
 .stat b{display:block;font-family:var(--display);font-size:2rem;color:var(--accent);font-variant-numeric:tabular-nums;line-height:1.1}
 .stat span{font-size:.9rem;color:var(--muted)}
-@media (max-width:720px){.stats .in{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.stats .in{grid-template-columns:1fr}}
 
 section .in{padding-block:56px;display:flex;flex-direction:column;gap:24px}
 section h2{font-size:1.7rem}
@@ -152,7 +152,6 @@ footer .copy{font:inherit;font-size:.85rem;border:1px solid var(--accent-fg);bac
 
 <div class="stats" aria-label="Highlights"><div class="in">
   <div class="stat"><b>8+</b><span>years in product and delivery</span></div>
-  <div class="stat"><b>+21%</b><span>opt-in rate in 3 months</span></div>
   <div class="stat"><b>~30%</b><span>less refinement prep time with AI</span></div>
   <div class="stat"><b>3</b><span>industries: healthtech, rewards, e-commerce</span></div>
 </div></div>
