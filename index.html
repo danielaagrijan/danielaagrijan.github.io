@@ -112,7 +112,8 @@ details[open] .when-closed,details:not([open]) .when-open{display:none}
 .note-top{padding:28px clamp(18px,4vw,32px);display:flex;flex-direction:column;gap:12px;border-bottom:1px solid var(--line)}
 .note-top h3{font-size:clamp(1.25rem,2.6vw,1.5rem)}
 .note-top p{color:var(--muted);max-width:62ch}
-.note-body{padding:24px clamp(18px,4vw,32px) 28px;display:flex;flex-direction:column;gap:26px}
+.note details{border-top:0}
+.note-body{padding:8px clamp(18px,4vw,32px) 28px;display:flex;flex-direction:column;gap:26px}
 .bets{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
 .bet{border:1px solid var(--line);border-radius:12px;padding:18px;display:flex;flex-direction:column;gap:8px;min-width:0}
 .bet .tag{align-self:flex-start;font-size:.72rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:2px 8px;border-radius:4px;background:var(--band);color:var(--muted)}
@@ -189,6 +190,8 @@ footer .copy{font:inherit;font-size:.85rem;border:1px solid var(--accent-fg);bac
       <h3>How we plan to reach the opt-in target</h3>
       <p>Research showed that low belief in the proposition is the biggest blocker to opting in. The next phase builds on that, with changes based on customer feedback and agreed with stakeholders.</p>
     </div>
+    <details>
+    <summary><span><span class="when-closed">Read the full plan</span><span class="when-open">Hide the full plan</span> <span class="hint">· planned changes, success metrics, risks, sequence</span></span></summary>
     <div class="note-body">
       <div class="bets">
         <div class="bet"><span class="tag ship">Ship directly</span><h4>Show the total rewards given</h4><p>Add the overall number of rewards given in relevant, visible places across the proposition.</p><p class="hyp">Proof that rewards are really paid out makes the proposition more believable. It needs no experiment because it directly addresses the main blocker.</p></div>
@@ -221,6 +224,7 @@ footer .copy{font:inherit;font-size:.85rem;border:1px solid var(--accent-fg);bac
         </ol>
       </div>
     </div>
+    </details>
   </article>
 
   <article class="case">
